@@ -188,9 +188,11 @@ nav .hamburg {
   padding-top: 60px;
   padding-bottom: 52px;
   color: #303236;
+
 }
 .main .container {
   max-width: 880px;
+  height: 400px;
 }
 
 .text-medium {
@@ -244,7 +246,28 @@ h1 {
 .btn-outline-secondary {
   border: 1px solid rgba(48, 50, 54, .2);
   color: #303236;
+  text-decoration: none;
+
 }
+
+.btn-outline-secondary:hover, .btn-outline-secondary:active {
+  background: #1566d6;
+  border-color: #1566d6;
+  color: #fff;
+}
+
 .schedule-demo{
-  margin-top: 33px;
+  margin-top: 40px;
+}
+.section-two {
+  padding-bottom: 60px;
+}
+.w-100 {
+  width: 100% !important;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-left: 42px;
+  padding-right: 42px;
 }
