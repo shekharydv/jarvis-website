@@ -181,4 +181,67 @@ nav .hamburg {
     display: block;
   }
 }
-/* Media Quries on 991px  Ended*/
+
+
+
+.main {
+  padding-top: 60px;
+  padding-bottom: 52px;
+  color: #303236;
+}
+.main .container {
+  max-width: 880px;
+}
+
+.text-medium {
+  font-weight: 500 !important;
+}
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 67px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 104.627%;
+  letter-spacing: -2.68px;
+  text-transform: capitalize;
+}
+.text-blue {
+  color: #2b70c5;
+}
+.main h1 {
+  margin-bottom: 32px;
+}
+
+.text-extra-big {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.44px;
+  text-transform: capitalize;
+  line-height: 1.5em;
+}
+    
+.main .btn {
+  margin-top: 32px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.44px;
+  padding: 20px 40px;
+  border-radius: 62px;
+}
+
+.btn-outline-secondary {
+  border: 1px solid rgba(48, 50, 54, .2);
+  color: #303236;
+}
