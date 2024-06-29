@@ -386,3 +386,267 @@ h1 {
   letter-spacing: -2px;
   text-transform: capitalize;
 }
+
+/* we serve */
+.we-serve {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.we-serve .container{
+  max-width: 1030px;
+}
+.we-serve h2 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -2px;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #303236;
+}
+
+.serve-box img {
+  width: 100%;
+  transition: all .5s ease-in-out;
+}
+
+
+/*partners*/
+.partners {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.partners .container{
+  max-width: 1030px;
+}
+
+.partners h2 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -2px;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #303236;
+}
+
+.collaborators {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.collaborators .container{
+  max-width: 850px;
+}
+
+.collaborators h2 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -2px;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #303236;
+}
+
+.collaborators p {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -0.44px;
+  text-transform: capitalize;
+}
+
+.logo-grid img {
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  filter: grayscale(1);
+}
+
+
+/* media */
+
+.media {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.media .container{
+  max-width: 850px;
+}
+
+.media h2 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -2px;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #303236;
+}
+
+
+/* contact */
+
+.contact {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.contact .container{
+  max-width: 1230px;
+}
+
+.contact-form {
+  border-radius: 16px;
+  border: 1px solid rgba(21, 102, 214, .3);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10004;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.modal.fade .modal-dialog {
+  transition: transform .3s ease-out;
+  transform: translate(0, -50px);
+}
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+.contact-form .box {
+  width: 317px;
+  padding: 72px 50px;
+  background: #1566d6;
+  border-radius: 16px 0 0 16px;
+  height: 100%;
+}
+
+.contact-form .box .icon-box {
+  width: 162px;
+  height: 162px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .2);
+  margin-bottom: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form .title {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  line-height: normal;
+  margin-bottom: 1.5rem;
+  letter-spacing: -2px;
+  text-transform: capitalize;
+}
+
+.text-extra-big {
+  color: #fff;
+  font-weight: 400;
+    line-height: 154.545%;
+}
+.modal-content {
+  height: 100%;
+}
+
+.contact-form .col {
+  padding: 46px 62px;
+  flex: 1;
+
+}
+
+input[type="checkbox" i] {
+  background-color: initial;
+  cursor: default;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 3px 4px;
+  padding: initial;
+  border: initial;
+}
+
+.selected {
+  background-color: blue;
+  color: #fff;
+  border-color: blue;
+}
+.chip {
+  
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+
+/* footer */
+
+footer {
+  background: linear-gradient(0deg, rgba(21, 102, 214, 0.04) 0%, rgba(21, 102, 214, 0.04) 100%), #fff;
+  color: #626b7f;
+  padding-top: 64px;
+}
+footer .footer-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 42px;
+  margin-bottom: 42px;
+  border-bottom: 1px solid #ebebeb;
+}
+footer .footer-head .text-big {
+  max-width: 392px;
+}
+.text-big {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+footer .footer-title {
+  color: #303236;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.16px;
+  text-transform: capitalize;
+  margin-bottom: 22px;
+}
+
+footer ul {
+  padding: 0;
+  list-style-type: none;
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 14px;
+}
+footer .row {
+  margin-bottom: 42px;
+}
+
+footer .copyrights {
+  padding: 40px 0;
+  background: linear-gradient(0deg, rgba(21, 102, 214, 0.12) 0%, rgba(21, 102, 214, 0.12) 100%), #fff;
+  color: #676e76;
+  line-height: 150%;
+  text-transform: capitalize;
+}
