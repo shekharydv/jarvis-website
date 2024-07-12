@@ -1,0 +1,23 @@
+<svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Iconsax/TwoTone/shieldtick">
+<path id="Vector" d="M19.0132 4.79006L9.96878 8.19756C7.88441 8.97693 6.18066 11.4419 6.18066 13.6532V27.1201C6.18066 29.2588 7.59441 32.0682 9.31628 33.3551L17.11 39.1732C19.6657 41.0944 23.8707 41.0944 26.4263 39.1732L34.22 33.3551C35.9419 32.0682 37.3557 29.2588 37.3557 27.1201V13.6532C37.3557 11.4238 35.6519 8.95881 33.5675 8.17943L24.5232 4.79006C22.9825 4.22818 20.5175 4.22818 19.0132 4.79006V4.79006Z" stroke="url(#paint0_linear_401_26839)" stroke-width="1.85294" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="Group">
+<path id="Vector_2" d="M29.9063 17.2438L22.2938 24.8563L19.3938 20.5063L13.5938 26.3063" stroke="url(#paint1_linear_401_26839)" stroke-width="1.85294" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M26.2813 17.2437H29.9063V20.8687" stroke="url(#paint2_linear_401_26839)" stroke-width="1.85294" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_401_26839" x1="19.2595" y1="4.36865" x2="34.5868" y2="10.3306" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2B70C5"/>
+<stop offset="1" stop-color="#2C8AE8"/>
+</linearGradient>
+<linearGradient id="paint1_linear_401_26839" x1="20.4374" y1="26.3063" x2="25.9909" y2="21.7855" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2B70C5"/>
+<stop offset="1" stop-color="#2C8AE8"/>
+</linearGradient>
+<linearGradient id="paint2_linear_401_26839" x1="27.8021" y1="20.8687" x2="29.5056" y2="20.0983" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2B70C5"/>
+<stop offset="1" stop-color="#2C8AE8"/>
+</linearGradient>
+</defs>
+</svg>
