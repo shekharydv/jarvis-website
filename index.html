@@ -350,150 +350,133 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="JV-contact">
         <div class="container">
             <div class="contact-form" id="contactForm">
-                <div class="row">
-                    <div class="col-auto">
-                        <div class="box">
-                            <div class="icon-box">
-                                <img src="https://institution.jarvisinvest.com/assets/images/general/phone-icon.svg">
-                            </div>
-                            <div class="title mb-4">Get a call back</div>
-                            <div class="text-extra-big">Fill this form and we will get back to you within 24 hours
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <form name="contact-institute" method="POST" action=""
-                            onsubmit="handleContactInstituteSubmit(event)">
-
-                            <input type="hidden" name="userType" value="INSTITUTION">
-                            <input type="hidden" name="productType" value="HOME">
-
-
-                            <div class="form-group">
-                                <label class="form-label">We are</label>
-                                <div class="chip-select">
-                                    <label class="chip">
-                                        <input type="checkbox" name="user-institute-type[]" value="Broker" checked="">
-                                        Broker
-                                    </label>
-                                    <label class="chip">
-                                        <input type="checkbox" name="user-institute-type[]"
-                                            value=" Wealth Management Firms">
-                                        Wealth Management Firms
-                                    </label>
-                                    <label class="chip">
-                                        <input type="checkbox" name="user-institute-type[]" value="Robo Advisors">
-                                        Robo Advisors
-                                    </label>
-                                    <label class="chip">
-                                        <input type="checkbox" name="user-institute-type[]" value="Research Advisors">
-                                        Research Advisors
-                                    </label>
-                                    <label class="chip">
-                                        <input type="checkbox" name="user-institute-type[]" value="Treasury Desk">
-                                        Treasury Desk
-                                    </label>
-                                    <label class="chip">
-                                        <input type="checkbox" name="user-institute-type[]" value="Fund Houses">
-                                        Fund Houses
-                                    </label>
-                                </div>
-                                <span class="text-danger error-contact-institute-type"
-                                    style="visibility: hidden;">Please select at least one option</span>
-                                <!-- <span class="text-danger error-contact-user-type" style="visibility: hidden;"></span> -->
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6 col-12">
-                                    <div class="form-group">
-                                        <label class="form-label" for="contact-name">First Name</label>
-                                        <input id="contact-first-name" name="contact-first-name" type="text"
-                                            class="form-control" placeholder="First Name">
-                                        <span class="text-danger error-contact-first-name"
-                                            style="visibility: hidden;"></span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-12">
-                                    <div class="form-group">
-                                        <label class="form-label">Last Name</label>
-                                        <input id="contact-last-name" name="contact-last-name" type="text"
-                                            class="form-control" placeholder="Last Name">
-                                        <span class="text-danger error-contact-last-name"
-                                            style="visibility: hidden;"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-6 col-12">
-                                    <div class="form-group">
-                                        <label class="form-label">Email</label>
-                                        <input id="contact-email" name="contact-email" type="text" class="form-control"
-                                            placeholder="you@company.com">
-                                        <span class="text-danger error-contact-email"
-                                            style="visibility: hidden;"></span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-12">
-                                    <div class="form-group">
-                                        <label class="form-label">Phone number</label>
-                                        <div class="phone-box">
-                                            <select class="form-select" aria-label="Default select example"
-                                                id="country-code-institution">
-                                                <option value="1" selected="">India</option>
-                                                <option value="2">US</option>
-                                                <option value="3">UAE</option>
-                                            </select>
-                                            <input id="contact-mobile-number" name="contact-mobile-number" type="text"
-                                                class="form-control" placeholder="+91 (123) 456-7890">
-                                        </div>
-                                        <span class="text-danger error-contact-mobile-number"
-                                            style="visibility: hidden;"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label class="form-label">How can we help? (Optional)</label>
-                                        <textarea class="form-control" id="msg-box" name="msg-box"
-                                            placeholder="Tell us a little about the project..."></textarea>
-                                        <span class="text-danger error-msg-box" style="visibility: hidden;"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100">Get started</button>
-                        </form>
-                    </div>
+    <div class="row">
+        <div class="col-auto">
+            <div class="bg-blue">
+                <div class="icon-box">
+                    <img src="https://institution.jarvisinvest.com/assets/images/general/phone-icon.svg">
                 </div>
-            </div>
-            <button type="button" class="btn btn-primary success-btn" data-bs-toggle="modal"
-                data-bs-target="#exampleModal" style="visibility: hidden;">Launch demo modal</button>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered m-auto p-20 ">
-                    <div class="modal-content">
-                        <div class="modal-header" style="border-bottom: 0px; margin:20px;">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body text-center pb-4 ">
-                            <img src="https://institution.jarvisinvest.com/assets/images/home/thank_you_icon.png"
-                                alt="thank you" style="margin-bottom:23px;height:50px">
-                            <h4>Thank you for contacting us!</h4>
-                            <p class="text-muted">We will get back to you shortly</p>
-                        </div>
-                    </div>
+                <div class="JV-title mb-4">Get a call back</div>
+                <div class="text-extra-big">Fill this form and we will get back to you within 24 hours
                 </div>
             </div>
         </div>
+        <div class="col">
+            <form name="contact-institute" method="POST" action="" onsubmit="handleContactInstituteSubmit(event)">
+            
+                <input type="hidden" name="userType" value="INSTITUTION">
+                <input type="hidden" name="productType" value="HOME">
+
+
+            <div class="form-group">    
+                <label class="form-label">We are</label>
+                    <div class="chip-select">
+                        <label class="chip">
+                            <input type="checkbox" name="user-institute-type[]" value="Broker" checked="">
+                            Broker
+                        </label>  
+                        <label class="chip">
+                            <input type="checkbox" name="user-institute-type[]" value=" Wealth Management Firms">
+                            Wealth Management Firms
+                        </label>       
+                        <label class="chip">
+                            <input type="checkbox" name="user-institute-type[]" value="Robo Advisors">
+                            Robo Advisors
+                        </label>
+                        <label class="chip">
+                            <input type="checkbox" name="user-institute-type[]" value="Research Advisors">
+                            Research Advisors
+                        </label>
+                        <label class="chip">
+                            <input type="checkbox" name="user-institute-type[]" value="Treasury Desk">
+                            Treasury Desk
+                        </label>
+                        <label class="chip">
+                            <input type="checkbox" name="user-institute-type[]" value="Fund Houses">
+                            Fund Houses
+                        </label>
+                    </div>
+                    <span class="text-danger error-contact-institute-type" style="visibility: hidden;">Please select at least one option</span>
+                    <!-- <span class="text-danger error-contact-user-type" style="visibility: hidden;"></span> -->
+            </div>
+                <div class="row">
+                    <div class="col-sm-6 col-12">
+                        <div class="form-group">
+                            <label class="form-label" for="contact-name">First Name</label>
+                            <input id="contact-first-name" name="contact-first-name" type="text" class="form-control" placeholder="First Name">
+                            <span class="text-danger error-contact-first-name" style="visibility: hidden;"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <div class="form-group">
+                            <label class="form-label">Last Name</label>
+                            <input id="contact-last-name" name="contact-last-name" type="text" class="form-control" placeholder="Last Name">
+                            <span class="text-danger error-contact-last-name" style="visibility: hidden;"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-12">
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input id="contact-email" name="contact-email" type="text" class="form-control" placeholder="you@company.com">
+                            <span class="text-danger error-contact-email" style="visibility: hidden;"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <div class="form-group">
+                            <label class="form-label">Phone number</label>
+                            <div class="phone-box">
+                                <select class="form-select" aria-label="Default select example" id="country-code-institution">
+                                    <option value="1" selected="">India</option>
+                                    <option value="2">US</option>
+                                    <option value="3">UAE</option>
+                                </select>
+                                <input id="contact-mobile-number" name="contact-mobile-number" type="text" class="form-control" placeholder="+91 (123) 456-7890">
+                            </div>
+                            <span class="text-danger error-contact-mobile-number" style="visibility: hidden;"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label class="form-label">How can we help? (Optional)</label>
+                            <textarea class="form-control" id="msg-box" name="msg-box" placeholder="Tell us a little about the project..."></textarea>
+                            <span class="text-danger error-msg-box" style="visibility: hidden;"></span>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Get started</button>
+            </form>
+        </div>
+    </div>
+</div>
+<button type="button" class="btn btn-primary success-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="visibility: hidden;">Launch demo modal</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered m-auto p-20 ">
+            <div class="modal-content">
+                <div class="modal-header" style="border-bottom: 0px; margin:20px;">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> 
+                <div class="modal-body text-center pb-4 ">
+                    <img src="https://institution.jarvisinvest.com/assets/images/home/thank_you_icon.png" alt="thank you" style="margin-bottom:23px;height:50px">
+                    <h4>Thank you for contacting us!</h4>
+                    <p class="text-muted">We will get back to you shortly</p>
+                </div>
+            </div>
+        </div>
+    </div>        </div>
     </section>
 
 
 
 
 
-    <script src="./assets/index.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
