@@ -45,11 +45,6 @@ document.querySelector('form[name="contact-us"]').addEventListener('submit', fun
       chips[0].classList.add('selected'); // Select the first chip
     }
   });
-  
-  
-  
-  
-  
   document.addEventListener('DOMContentLoaded', function () {
     // Get all checkboxes within the chip-select container
     var checkboxes = document.querySelectorAll('.chip-select input[type="checkbox"]');
@@ -60,7 +55,7 @@ document.querySelector('form[name="contact-us"]').addEventListener('submit', fun
             var chip = this.closest('.chip');
             if (this.checked) {
                 chip.classList.add('selected');
-            } else {
+            } else {     
                 chip.classList.remove('selected');
             }
         });
@@ -71,31 +66,3 @@ document.querySelector('form[name="contact-us"]').addEventListener('submit', fun
     firstCheckbox.checked = true;
     firstChip.classList.add('selected');
   });
-
-
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:3,
-            nav:false
-        },
-        1000:{
-            items:5,
-            nav:true,
-            loop:false
-        }
-    }
-})
-
-
-// store data in variable
-
-
-  
