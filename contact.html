@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Jarvis_Invest</title>
+    <!-- TODO : Favicon -->
+</head>
+
+<header class="navbar">
+    <nav class="container">
+        <a href="index.html"><img src="assets/img/Jarvis-logo.svg" alt=""> </a>
+        <div class="nav-center hide-mobile">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="#">Product <img src="assets/img/chevron-down.svg"></a>
+            <a class="nav-link" href="#">Solution <img src="assets/img/chevron-down.svg"></a>
+            <a class="nav-link" href="#">Company</a>
+            <a class="nav-link" href="#">Library</a>
+            <a class="nav-link" href="#">Media</a>
+            <a class="nav-link" href="contact.html">Contact us</a>
+            <a class="nav-link" href="call"><img src="assets/img/retail-icon.svg" style="margin-right: 5px;"> Retails
+                <img src="assets/img/right-arrow-icon.svg" style="margin-left: 5px;"></a>
+            <button class="btn-primary rounded-lg">Schedule Demo</button>
+        </div>
+        <div class="hamburg">
+            <i class="ri-menu-line"></i>
+        </div>
+    </nav>
+</header>
+
+<br>
+<br>
+<section class="contact">
+    <div class="container">
+        <div class="contact-form" id="contactForm">
+            <div class="row">
+                <div class="col-auto">
+                    <div class="bg-blue">
+                        <div class="icon-box">
+                            <img src="https://institution.jarvisinvest.com/assets/images/general/phone-icon.svg">
+                        </div>
+                        <div class="JV-title mb-4">Get a call back</div>
+                        <div class="text-extra-big">Fill this form and we will get back to you within 24 hours
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <form name="contact-us" method="POST" action=""
+                        onsubmit="handleContactInstituteSubmit(event)">
+
+                        <input type="hidden" name="userType" value="INSTITUTION">
+                        <input type="hidden" name="productType" value="HOME">
+
+
+                        <div class="form-group">
+                            <label class="form-label">We are</label>
+                            <div class="chip-select">
+                                <label class="chip selected">
+                                    <input type="checkbox" name="user-institute-type[]" value="Broker" checked="">
+                                    Broker
+                                </label>
+                                <label class="chip">
+                                    <input type="checkbox"  name="user-institute-type[]"
+                                        value=" Wealth Management Firms">
+                                    Wealth Management Firms
+                                </label>
+                                <label class="chip">
+                                    <input type="checkbox" name="user-institute-type[]"  value="Robo Advisors">
+                                    Robo Advisors
+                                </label>
+                                <label class="chip">
+                                    <input type="checkbox" name="user-institute-type[]" value="Research Advisors">
+                                    Research Advisors
+                                </label>
+                                <label class="chip">
+                                    <input type="checkbox"  name="user-institute-type[]" value="Treasury Desk">
+                                    Treasury Desk
+                                </label>
+                                <label class="chip">
+                                    <input type="checkbox" name="user-institute-type[]"  value="Fund Houses">
+                                    Fund Houses
+                                </label>
+                            </div>
+                            
+
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label class="form-label" for="contact-name">First Name</label>
+                                    <input id="contact-first-name" name="contact-first-name" type="text"
+                                        class="form-control" placeholder="First Name">
+                                   
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label class="form-label">Last Name</label>
+                                    <input id="contact-last-name" name="contact-last-name" type="text"
+                                        class="form-control" placeholder="Last Name">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label class="form-label">Email</label>
+                                    <input id="contact-email" name="contact-email" type="text" class="form-control"
+                                        placeholder="you@company.com">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label class="form-label">Phone number</label>
+                                    <div class="phone-box">
+                                        <select class="form-select" aria-label="Default select example"
+                                            id="country-code-institution">
+                                            <option value="1" selected="">India</option>
+                                            <option value="2">US</option>
+                                            <option value="3">UAE</option>
+                                        </select>
+                                        <input id="contact-mobile-number" name="contact-mobile-number" type="text"
+                                            class="form-control" placeholder="+91 (123) 456-7890">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 fullwidth">
+                                <div class="form-group">
+                                    <label class="form-label">How can we help? (Optional)</label>
+                                    <textarea class="form-control" id="msg-box" name="msg-box"
+                                        placeholder="Tell us a little about the project..."></textarea>
+                                    <span class="text-danger error-msg-box" style="visibility: hidden;"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary fullwidth">Get started</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary success-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            style="visibility: hidden;">Launch demo modal</button>
+    </div>
+</section>
+
+
+<section class="contact">
+    <div class="container">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7539.937777465128!2d72.92383999213097!3d19.10902072840931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b90870791cc1%3A0x840a4c0deca2d831!2sJARVIS%20INVEST!5e0!3m2!1sen!2sin!4v1722863180991!5m2!1sen!2sin" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</section>
+<br>
+<br>
+<footer>
+    <div class="container">
+        <div class="footer-head">
+            <a href="">
+                <img src="https://institution.jarvisinvest.com/assets/images/general/Jarvis-logo.svg">
+            </a>
+            <div class="text-big">
+                The AI Based Autonomous Global Market Research &amp; Analytics Platform
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-md-auto col-sm-6 col-12">
+                <div class="footer-title">Product</div>
+                <ul>
+                    <li><a href="">JARVIS APIs</a></li>
+                    <li><a href="">JARVIS Equity
+                            Analytics Terminal</a></li>
+                    <li><a href="">White Labelled
+                            Solutions</a></li>
+                    <li><a href="">Portfolio
+                            Management Solutions</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col-md-auto col-sm-6 col-12">
+                <div class="footer-title">Solutions</div>
+                <ul>
+                    <li><a href="">Brokers</a></li>
+                    <li><a href="">Wealth
+                            Management Firms</a></li>
+                    <li><a href="">Robo Advisors</a></li>
+                    <li><a href="">Research Advisors</a>
+                    </li>
+                    <li><a href="">Treasury Desks</a></li>
+                    <li><a href="">Fund Houses </a> </li>
+
+                </ul>
+            </div>
+            <div class="col-md-auto col-sm-6 col-12" style="max-width: 500px;">
+                <div class="mb-4">
+                    <div class="JV-subtitle">India</div>
+                    <div class="address">
+                        7th floor, Dheeraj Kawal, Lal Bahadur Shashtri Road, Vikhroli West, Mumbai, Maharashtra 400079
+                    </div>
+                    <div class="d-flex mb-2">
+                        <i class="bi bi-envelope me-3"></i>
+                        <div>customersupport@jarvisinvest.com</div>
+                    </div>
+                    <div class="d-flex">
+                        <i class="bi bi-clock me-3"></i>
+                        <div>Mon - Sat | 09:00 AM - 08:00 PM (Sunday Closed)</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row justify-content-between">
+
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-medium mb-3">BSAL Membership</div>
+                <div class="extra-info">
+                    <img src="https://institution.jarvisinvest.com/assets/images/general/bsal.svg"> 1560
+                </div>
+            </div>
+            <div class="col-md-6 text-md-center" style="text-align: right !important;">
+                <div class="text-medium mb-3">SEBI Registered Investment Advisor</div>
+                <div class="extra-info">
+                    <img src="https://institution.jarvisinvest.com/assets/images/general/SEBI.png"> INA 000013235
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyrights">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-auto">Ventugrow Consultants Pvt. Ltd.</div>
+                <div class="col-auto">© 2023 All Rights Reserved</div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
