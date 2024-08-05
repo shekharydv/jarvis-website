@@ -520,6 +520,9 @@ h2 {
   max-width: 1030px;
 }
 
+
+
+
 .collaborators {
   padding-top: 80px;
   padding-bottom: 0px;
@@ -548,6 +551,9 @@ h2 {
   transition: all .3s ease-in-out;
   filter: grayscale(1);
 }
+
+
+
 
 /* media */
 .media {
@@ -776,6 +782,12 @@ input[type="checkbox"] {
 }
 }
 
+.selected {
+  background-color: blue;
+  color: #fff;
+  border-color: blue;
+}
+
 /* footer */
 footer {
   background: linear-gradient(0deg, rgba(21, 102, 214, 0.04) 0%, rgba(21, 102, 214, 0.04) 100%), #fff;
@@ -862,3 +874,4 @@ footer .copyrights {
   line-height: 150%;
   text-transform: capitalize;
 }
+
